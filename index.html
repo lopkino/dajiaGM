@@ -36,36 +36,110 @@
     </header>
     <div class="swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide slide1">This is a slide.</div>
-            <div class="swiper-slide slide2">This is another slide.</div>
-            <div class="swiper-slide slide3">This is a final slide.</div>
-            <div class="swiper-slide slide4">This is a final slide.</div>
+            <div class="swiper-slide slide1"></div>
+            <div class="swiper-slide slide2"></div>
+            <div class="swiper-slide slide3"></div>
+            <div class="swiper-slide slide4"></div>
         </div>
+        <div class="container-fluid thumbBK"></div>
         <div class="container thumb">
-            <div class="thumbs active" onclick="swipeTo(0)"><img src="image/slider/thumb/thumb1.jpg" height="116" width="300"></div>
-            <div class="thumbs" onclick="swipeTo(1)"><img src="image/slider/thumb/thumb2.jpg" height="116" width="300"></div>
-            <div class="thumbs" onclick="swipeTo(2)"><img src="image/slider/thumb/thumb3.jpg" height="116" width="300"></div>
-            <div class="thumbs" onclick="swipeTo(3)"><img src="image/slider/thumb/thumb4.jpg" height="116" width="300"></div>
+            <div class="row">
+                <div class="col-sm-3 col-md-3 col-lg-3" onclick="swipeTo(0,this)">
+                    <div class="thumbs active thumbs1"></div>
+                </div>
+                <div class="col-sm-3 col-md-3 col-lg-3" onclick="swipeTo(1,this)">
+                    <div class="thumbs thumbs2"></div>
+                </div>
+                <div class="col-sm-3 col-md-3 col-lg-3" onclick="swipeTo(2,this)">
+                    <div class="thumbs thumbs3"></div>
+                </div>
+                <div class="col-sm-3 col-md-3 col-lg-3" onclick="swipeTo(3,this)">
+                    <div class="thumbs thumbs4"></div>
+                </div>
+            </div>
         </div>
     </div>
+    <div class="swiper-gameCenter">
+        <div class="container gameCenter">游戏中心
+            <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        </div>
+        <div class="container swiperGame">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide game-ctrl game1">
+                    <div class="gamePic"></div>
+                    <div class="gameName">《摩天少年》</div>
+                    <div class="gameIntroduction">短腿少年是这样练成的，还不快来，更待何时！</div>
+                    <div class="gameEnter"><span class="go">进入官网</span></div>
+                </div>
+                <div class="swiper-slide game-ctrl game2">
+                    <div class="gamePic"></div>
+                    <div class="gameName">《摩天少年》</div>
+                    <div class="gameIntroduction">短腿少年是这样练成的，还不快来，更待何时！</div>
+                    <div class="gameEnter"><span class="go">进入官网</span></div>
+                </div>
+                <div class="swiper-slide game-ctrl game3">
+                    <div class="gamePic"></div>
+                    <div class="gameName">《摩天少年》</div>
+                    <div class="gameIntroduction">短腿少年是这样练成的，还不快来，更待何时！</div>
+                    <div class="gameEnter"><span class="go">进入官网</span></div>
+                </div>
+                <div class="swiper-slide game-ctrl game4">
+                    <div class="gamePic"></div>
+                    <div class="gameName">《摩天少年》</div>
+                    <div class="gameIntroduction">短腿少年是这样练成的，还不快来，更待何时！</div>
+                    <div class="gameEnter"><span class="go">进入官网</span></div>
+                </div>
+
+            </div>
+
+        </div>
+        
+    </div>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script type="text/javascript">
-
         var mySwiper = new Swiper('.swiper-container', {
             pagination: '.swiper-pagination',
             paginationClickable: '.swiper-pagination',
-            spaceBetween: 30,
             effect: 'fade',
             autoplay: 3000,
-            onSlideChangeStart: function(mySwiper) {
-                // alert('事件触发了;');
+            onSlideChangeStart: function() {
+                $('.thumb .row').find('.thumbs').eq(mySwiper.activeIndex).addClass('active');
+                $('.thumb .row').find('.thumbs').eq(mySwiper.activeIndex).parent().siblings().find('.thumbs').removeClass('active');
             }
         })
 
-        function swipeTo(index) {
+
+        var swiperGame = new Swiper('.swiperGame', {
+            pagination: '.swiper-pagination',
+            slidesPerView: 3,
+            paginationClickable: true,
+            spaceBetween: 10,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+        });
+
+        function swipeTo(index, obj) {
             mySwiper.slideTo(index, 500);
+            $(obj).find('.thumbs').addClass('active');
+            $(obj).siblings().find('.thumbs').removeClass('active');
         }
     </script>
 </body>
