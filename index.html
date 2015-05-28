@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>大家游戏</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/swiper.min.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    <style type="text/css">
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <div id="logo"></div>
+                </div>
+                <ul class="nav navbar-nav navbar-right nav_co">
+                    <li class="active"><a href="#">官网首页</a></li>
+                    <li><a href="#">公司简介</a></li>
+                    <li><a href="#">新闻动态</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">诚聘英才</a></li>
+                    <li><a href="#">客 服</a></li>
+                    <li><a href="#">论 坛</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide1">This is a slide.</div>
+            <div class="swiper-slide slide2">This is another slide.</div>
+            <div class="swiper-slide slide3">This is a final slide.</div>
+            <div class="swiper-slide slide4">This is a final slide.</div>
+        </div>
+        <div class="container thumb">
+            <div class="thumbs active" onclick="swipeTo(0)"><img src="image/slider/thumb/thumb1.jpg" height="116" width="300"></div>
+            <div class="thumbs" onclick="swipeTo(1)"><img src="image/slider/thumb/thumb2.jpg" height="116" width="300"></div>
+            <div class="thumbs" onclick="swipeTo(2)"><img src="image/slider/thumb/thumb3.jpg" height="116" width="300"></div>
+            <div class="thumbs" onclick="swipeTo(3)"><img src="image/slider/thumb/thumb4.jpg" height="116" width="300"></div>
+        </div>
+    </div>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script type="text/javascript">
+
+        var mySwiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: '.swiper-pagination',
+            spaceBetween: 30,
+            effect: 'fade',
+            autoplay: 3000,
+            onSlideChangeStart: function(mySwiper) {
+                // alert('事件触发了;');
+            }
+        })
+
+        function swipeTo(index) {
+            mySwiper.slideTo(index, 500);
+        }
+    </script>
+</body>
+
+</html>
