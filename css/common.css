@@ -1,19 +1,20 @@
-html, body {
+html,
+body {
     background: #F6F6F6;
 }
-
 /* 小屏幕（平板，大于等于 768px） sm-min */
-@media (min-width:768px) {
+
+@media (min-width: 768px) {
     .container {
         padding: 0px;
     }
-    .swiper-gameCenter .swiperGame{
+    .swiper-gameCenter .swiperGame {
         width: 668px;
     }
 }
-
 /* 中等屏幕（桌面显示器，大于等于 992px） md-min */
-@media (min-width:992px) {
+
+@media (min-width: 992px) {
     .thumbs1 {
         background: url(../image/slider/thumb992/thumb1.jpg) no-repeat;
     }
@@ -26,76 +27,87 @@ html, body {
     .thumbs4 {
         background: url(../image/slider/thumb992/thumb4.jpg) no-repeat;
     }
-    .swiper-gameCenter .swiperGame{
+    .swiper-gameCenter .swiperGame {
         width: 892px;
     }
 }
-
 /* 大屏幕（大桌面显示器，大于等于 1200px） lg-min */
-@media (min-width:1200px) {
-    .swiper-gameCenter .swiperGame{
+
+@media (min-width: 1200px) {
+    .swiper-gameCenter .swiperGame {
         width: 1100px;
     }
 }
-
 /*头部导航*/
+
 .navbar-default {
     background-color: #fff
 }
+
 .navbar {
     margin-bottom: 0;
 }
+
 #logo {
     background: url(../image/logo.png) no-repeat;
     background-position: center center;
     width: 220px;
     height: 130px;
 }
+
 .nav_co {
     margin: 48px 0;
 }
+
 .nav_co li {
     width: 101px;
     font-size: 18px;
     text-align: center;
     height: 35px;
 }
+
 .nav_co li.active a {
     color: #fff !important;
     padding: 4px;
     background: #307EF5 !important;
     border-radius: 20px;
 }
+
 .nav_co li a {
     line-height: 26px;
     padding: 4px;
 }
-
 /*slider*/
+
 .swiper-container {
     width: 100%;
     height: 710px;
 }
+
 .swiper-container .slide1 {
     background: url(../image/slider/slider1_02.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
 }
+
 .swiper-container .slide2 {
     background: url(../image/slider/slider2.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
 }
+
 .swiper-container .slide3 {
     background: url(../image/slider/slider3.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
 }
+
 .swiper-container .slide4 {
     background: url(../image/slider/slider4.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
 }
+
 .thumbBK {
     background: rgba(0, 0, 0, 0.9);
     height: 150px;
@@ -104,6 +116,7 @@ html, body {
     z-index: 998;
     width: 100%;
 }
+
 .thumb {
     bottom: 15px;
     z-index: 999;
@@ -113,14 +126,17 @@ html, body {
     padding: 0;
     left: 50%;
 }
+
 .thumb .row div {
     padding: 0;
     text-align: center;
 }
+
 .thumb .active {
     opacity: 1;
     border: 1px solid #348aff;
 }
+
 .thumbs {
     height: 117px;
     display: inline-block;
@@ -130,28 +146,33 @@ html, body {
     opacity: 0.5;
     background-position: center center !important;
 }
+
 .thumbs1 {
     background: url(../image/slider/thumb/thumb1.jpg) no-repeat;
 }
+
 .thumbs2 {
     background: url(../image/slider/thumb/thumb2.jpg) no-repeat;
 }
+
 .thumbs3 {
     background: url(../image/slider/thumb/thumb3.jpg) no-repeat;
 }
+
 .thumbs4 {
     background: url(../image/slider/thumb/thumb4.jpg) no-repeat;
 }
-
 /*GameCenter*/
+
 .swiper-gameCenter {
-    margin-top: 20px;
+    margin: 20px 0;
 }
+
 .gameCenter {
     font-size: 24px;
-    
     position: relative;
 }
+
 .gameCenter:before {
     content: "";
     height: 34px;
@@ -162,51 +183,193 @@ html, body {
     border-radius: 3px;
     margin-right: 5px;
 }
+
 .swiper-gameCenter .swiperGame {
     height: 320px;
     margin-top: 10px;
     overflow: hidden;
     /*padding: 0px 40px;*/
 }
+
 .swiperGame .swiper-slide {
     background: #FFF;
+  box-shadow: 0 7px #ECECEC;
+  height: 310px;
 }
-.swiperGame .swiper-button-prev{
+
+.swiper-button-prev,
+.swiper-button-next {
+    top: 450%;
+    margin: -16px;
+    height: 120px;
+    width: 40px;
+}
+
+.glyphicon {
+    line-height: 120px;
+    color: #726A67;
+    padding: 0 10px;
+    font-size: 20px;
+}
+
+.swiper-button-prev {
+background: rgb(229,229,229); /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2U1ZTVlNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjcyJSIgc3RvcC1jb2xvcj0iI2UzZTNlMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNiMmIxYjEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(left,  rgb(229,229,229) 0%, rgb(227,227,227) 72%, rgb(178,177,177) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgb(229,229,229)), color-stop(72%,rgb(227,227,227)), color-stop(100%,rgb(178,177,177))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgb(229,229,229) 0%,rgb(227,227,227) 72%,rgb(178,177,177) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgb(229,229,229) 0%,rgb(227,227,227) 72%,rgb(178,177,177) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgb(229,229,229) 0%,rgb(227,227,227) 72%,rgb(178,177,177) 100%); /* IE10+ */
+background: linear-gradient(to right,  rgb(229,229,229) 0%,rgb(227,227,227) 72%,rgb(178,177,177) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e5e5', endColorstr='#b2b1b1',GradientType=1 ); /* IE6-8 */
 
 }
-.swiperGame .swiper-button-next{
-    
+
+.swiper-button-next {
+background: rgb(178,177,177); /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2IyYjFiMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjI4JSIgc3RvcC1jb2xvcj0iI2UzZTNlMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlNWU1ZTUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(left,  rgb(178,177,177) 0%, rgb(227,227,227) 28%, rgb(229,229,229) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgb(178,177,177)), color-stop(28%,rgb(227,227,227)), color-stop(100%,rgb(229,229,229))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgb(178,177,177) 0%,rgb(227,227,227) 28%,rgb(229,229,229) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgb(178,177,177) 0%,rgb(227,227,227) 28%,rgb(229,229,229) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgb(178,177,177) 0%,rgb(227,227,227) 28%,rgb(229,229,229) 100%); /* IE10+ */
+background: linear-gradient(to right,  rgb(178,177,177) 0%,rgb(227,227,227) 28%,rgb(229,229,229) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b2b1b1', endColorstr='#e5e5e5',GradientType=1 ); /* IE6-8 */
+
 }
-.game-ctrl {
-}
+
+.swiper-button-prev .glyphicon {}
+
+.swiper-button-next .glyphicon {}
+
+.game-ctrl {}
+
 .game-ctrl .gamePic {
     height: 176px;
-  background-size: cover !important;
-  margin-bottom: 20px;
-  background-position: center center !important;
+    background-size: cover !important;
+    margin-bottom: 10px;
+    background-position: center center !important;
 }
+
 .game-ctrl .gameName {
     font-size: 24px;
     margin-bottom: 5px;
 }
+
 .game-ctrl .gameIntroduction {
     font-size: 13px;
     padding-left: 10px;
 }
-.game-ctrl .gameEnter{
+
+.game-ctrl .gameEnter {
     /*height: 60px;*/
 }
-.game-ctrl .gameEnter span.go{
-padding: 12px 15px;
-  display: inline-block;
-  margin: 10px;
-  width: 100px;
-  border: 1px solid #2b82f9;
-  border-radius: 34px;
-  text-align: center;
-  float: right;
-  color: #2b82f9;
+
+.game-ctrl .gameEnter span.go {
+    padding: 12px 15px;
+    display: inline-block;
+    margin: 10px;
+    width: 100px;
+    border: 1px solid #2b82f9;
+    border-radius: 34px;
+    text-align: center;
+    float: right;
+    color: #2b82f9;
 }
+
 .game1 .gamePic {
     background: url(../image/GameCenter/game1.png) no-repeat;
+}
+
+/*新闻*/
+.more-link{
+    float: right;
+    background: url(../image/gameNews/more.png) no-repeat;
+    background-position: center left;
+    padding-left: 18px;
+    color: #333;
+}
+.news article{
+    margin: 20px 0;
+    background: #fff;
+    border: 1px solid #eaeaea;
+    height: 172px;
+}
+.news article .newContent{
+    background: #fff;
+    margin-left: 0px;
+
+}
+.news .newsPic{
+    padding: 0;
+}
+
+
+.news .newsPic img {
+}
+.news .newsCon{
+    padding: 0;
+}
+#at1 .newsPic {
+}
+.news .newContent .title {
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+    height: 45px;
+    line-height: 60px;
+}
+.news .newContent .time {
+    height: 35px;
+    color: #6c6c6c;
+}
+.news .newContent .content {
+    color: #6c6c6c;
+}
+.news .more{
+    background: #fff;
+
+}
+.news .more .goTo{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 35px auto;
+    text-align: center;
+    background: #eaeaea;
+    border: 2px solid #e1e1e1;
+    font-size: 20px;
+    color: #6c6c6c;
+    padding: 30px 20px;
+    line-height: 21px;
+}
+.news .more .goTo a{
+    color: #6c6c6c;
+}
+.news .more .goTo a:hover{
+    text-decoration: none;
+}
+/*foot*/
+footer{
+    background: #1e1f24;
+    width: 100%;
+    margin-top: 60px;
+}
+footer .container{
+    height: 160px
+}
+.footLogo{
+    background: url(../image/logo-foot.png)no-repeat;
+    height: 160px;
+    background-position: 70%;
+}
+footer{
+font-size: 12px;
+color: #fff;
+}
+footer .information{
+height: 160px;
+padding: 32px 0;
 }
