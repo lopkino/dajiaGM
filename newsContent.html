@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <title>大家游戏</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/swiper2.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+      <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <style type="text/css">.gradient {filter: none;}
+    </style>
+    <![endif]-->
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/res.css" rel="stylesheet">
+    <style type="text/css">
+    html,
+    body {
+        background: #FFF;
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <div id="logo"></div>
+                </div>
+                <ul class="nav navbar-nav navbar-right nav_co">
+                    <li><a href="index.html">官网首页</a></li>
+                    <li><a href="about.html">公司简介</a></li>
+                    <li class="active"><a href="news.html">新闻动态</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                    <li><a href="jobs.html">诚聘英才</a></li>
+                    <li><a href="#">客 服</a></li>
+                    <li><a href="#">论 坛</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="colors gradient"></div>
+    </header>
+    <div class="container newsTitle">
+        <p class="newsTitle_content">首页>新闻动态>详情</p>
+    </div>
+    <div class="container newsContent">
+        <article>
+            <div class="title">新仙剑装备首发拉！</div>
+            <div class="info">
+                <span class="source">来源:本站原创</span>
+                <span class="author">作者:本站编辑</span>
+                <span class="time">发布时间:2015-04-27 18:54</span>
+                <span class="hit">浏览次数:100</span>
+            </div>
+            <div class="content">
+                CMGE中国手游（以下简称“中国手游”）“全（新、欣、心）之夜，感谢有你”大型合作伙伴答谢会于4月25日在北京丽思卡尔顿酒店宴会大厅隆重举行，来自各大渠道和主流媒体的200多 位行业精英应邀参加了本次高端晚宴。由中国手游CMO王可与湖南卫视当家女主播沈梦辰共同主持的答谢会，在热情、愉悦、充满期待的气氛中被推向了高潮。
+            </div>
+        </article>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 col-md-5 col-lg-5">
+                    <div class="footLogo"></div>
+                </div>
+                <div class="col-sm-7 col-md-7 col-lg-7">
+                    <div class="information">
+                        <p>版权所有北京泰和大家科技有限公司 2009-2013 京ICP证XXXXXX号 京ICP备XXXXXXXX号</p>
+                        <p>地址：北京东城区香河园路1号院18号楼当代MOMA商务中心4层 联系电话：+8610 84288671</p>
+                        <p>京网文[2012]xxxx-xxx号 增值电信业务经营许可证：京B2-20100093</p>
+                        <span>家长监护 |  服务条款 |  广告合作 |  加盟我们 |  关于我们</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- // <script src="js/swiper.min.js"></script> -->
+    <script src="js/idangerous.swiper.js"></script>
+    <script type="text/javascript">
+    var mySwiper = new Swiper('.swiper-container', {
+        autoplay: 3000,
+        autoplayDisableOnInteraction: false,
+        onSlideChangeStart: function() {
+            $('.thumb .row').find('.thumbs').eq(mySwiper.activeIndex).addClass('active');
+            $('.thumb .row').find('.thumbs').eq(mySwiper.activeIndex).parent().siblings().find('.thumbs').removeClass('active');
+        }
+    })
+
+    var swiperGame = new Swiper('.swiperGame', {
+        slidesPerView: 3,
+    });
+
+    $('.swiper-button-next').click(function() {
+        swiperGame.swipeNext();
+    })
+    $('.swiper-button-prev').click(function() {
+        swiperGame.swipePrev();
+    })
+
+    function swipeTo(index, obj) {
+        mySwiper.swipeTo(index, 500);
+        $(obj).find('.thumbs').addClass('active');
+        $(obj).siblings().find('.thumbs').removeClass('active');
+    }
+    </script>
+</body>
+
+</html>
