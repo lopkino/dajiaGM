@@ -42,7 +42,8 @@ body {
 /*头部导航*/
 
 .navbar-default {
-    background-color: #fff
+    background-color: #fff;
+    cursor: pointer;
 }
 
 .navbar {
@@ -155,21 +156,7 @@ body {
     filter: alpha(opacity=50);
 }
 
-.thumbs1 {
-    background: url(../image/slider/thumb/thumb1.jpg) no-repeat;
-}
 
-.thumbs2 {
-    background: url(../image/slider/thumb/thumb2.jpg) no-repeat;
-}
-
-.thumbs3 {
-    background: url(../image/slider/thumb/thumb3.jpg) no-repeat;
-}
-
-.thumbs4 {
-    background: url(../image/slider/thumb/thumb4.jpg) no-repeat;
-}
 /*GameCenter*/
 
 .swiper-gameCenter {
@@ -305,7 +292,7 @@ body {
 }
 
 .game1 .gamePic {
-    background: url(../image/GameCenter/game1.png) no-repeat;
+   
 }
 /*新闻*/
 
