@@ -87,6 +87,7 @@ body {
     line-height: 26px;
     padding: 4px !important;
 }
+
 /*slider*/
 
 .swiper-container {
@@ -94,29 +95,11 @@ body {
     height: 710px;
 }
 
-.swiper-container .slide1 {
-    background: url(../image/slider/slider1_02.jpg) no-repeat;
+.swiper-container .slide10 {
     background-size: cover;
     background-position: top center;
 }
 
-.swiper-container .slide2 {
-    background: url(../image/slider/slider2.jpg) no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-
-.swiper-container .slide3 {
-    background: url(../image/slider/slider3.jpg) no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-
-.swiper-container .slide4 {
-    background: url(../image/slider/slider4.jpg) no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
 
 .thumbBK {
     filter: progid: DXImageTransform.Microsoft.gradient(startcolorstr=#e6000000, endcolorstr=#e6000000);
@@ -193,7 +176,7 @@ body {
 .swiper-button-prev,
 .swiper-button-next {
     top: 450%;
-    margin: -16px;
+    margin: -5px;
     height: 120px;
     width: 40px;
     position: absolute;
@@ -250,7 +233,7 @@ body {
 .swiper-button-next .glyphicon {}
 
 .game-ctrl {
-    width: 97%;
+    width: 98%;
     background: #fff;
     box-shadow: 0 7px #ECECEC;
     padding-left: 1px;
@@ -295,13 +278,26 @@ body {
    
 }
 /*新闻*/
-
+.newsCenter{
+    font-size: 24px
+}
+.newsCenter:before{
+  content: "";
+  height: 34px;
+  width: 6px;
+  display: inline-block;
+  background: #2b82f9;
+  vertical-align: top;
+  border-radius: 3px;
+  margin-right: 5px;
+}
 .more-link {
     float: right;
     background: url(../image/gameNews/more.png) no-repeat;
     background-position: center left;
     padding-left: 18px;
     color: #333;
+    font-size: 16px
 }
 
 .news article {
@@ -489,7 +485,7 @@ footer .information {
 }
 
 .colors {
-    height: 2px;
+    height: 3px;
 }
 
 .newsTitle {

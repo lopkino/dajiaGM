@@ -6,7 +6,7 @@
     }
     .swiper-gameCenter .swiperGame {
         width: 668px;
-          height: 260px
+        height: 300px
     }
     .news .newContent .title {
         height: 25px;
@@ -50,22 +50,25 @@
         font-size: 14px;
     }
     .footLogo {
-  background: url(../image/logo-foot.png) no-repeat;
-  height: 160px;
-  background-position: 10%;
-  background-size: 100%;
-}
-footer .information {
-  height: 160px;
-  padding: 33px 0;
-}
+        background: url(../image/logo-foot.png) no-repeat;
+        height: 160px;
+        background-position: 10%;
+        background-size: 100%;
+    }
+    footer .information {
+        height: 160px;
+        padding: 33px 0;
+    }
+    li.liCtrl {
+        width: 62px;
+    }
 }
 /* 中等屏幕（桌面显示器，大于等于 992px） md-min */
 
 @media (min-width: 992px) {
     .swiper-gameCenter .swiperGame {
-        width: 892px;
-        height: 278px;
+        width: 910px;
+        height: 315px;
     }
     .news .newContent .title {
         height: 40px;
@@ -103,26 +106,29 @@ footer .information {
     .nav_co {
         margin: 48px 0;
     }
-        .nav_co li {
+    .nav_co li {
         width: 101px;
         font-size: 18px;
     }
     .footLogo {
-  background: url(../image/logo-foot.png) no-repeat;
-  height: 160px;
-  background-position: 70%;
-}
-footer .information {
-  height: 160px;
-  padding: 32px 0;
-}
+        background: url(../image/logo-foot.png) no-repeat;
+        height: 160px;
+        background-position: 70%;
+    }
+    footer .information {
+        height: 160px;
+        padding: 32px 0;
+    }
+    li.liCtrl {
+        width: 76px;
+    }
 }
 /* 大屏幕（大桌面显示器，大于等于 1200px） lg-min */
 
 @media (min-width: 1200px) {
     .swiper-gameCenter .swiperGame {
-        width: 1100px;
-        height: 320px;
+        width: 1110px;
+        height: 335px;
     }
     .news .newContent .title {
         height: 50px;
@@ -156,17 +162,20 @@ footer .information {
     .nav_co {
         margin: 48px 0;
     }
-        .nav_co li {
+    .nav_co li {
         width: 101px;
         font-size: 18px;
     }
     .footLogo {
-  background: url(../image/logo-foot.png) no-repeat;
-  height: 160px;
-  background-position: 70%;
-}
-footer .information {
-  height: 160px;
-  padding: 32px 0;
-}
+        background: url(../image/logo-foot.png) no-repeat;
+        height: 160px;
+        background-position: 70%;
+    }
+    footer .information {
+        height: 160px;
+        padding: 32px 0;
+    }
+    li.liCtrl {
+        width: 76px;
+    }
 }
