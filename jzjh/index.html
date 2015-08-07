@@ -1,0 +1,535 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>网络游戏未成年人家长监护工程</title>
+    <style type="text/css">
+        {
+            PADDING-RIGHT: 0px;
+            PADDING-LEFT: 0px;
+            PADDING-BOTTOM: 0px;
+            MARGIN: 0px;
+            PADDING-TOP: 0px
+        }
+        
+        BODY {
+            FONT-SIZE: 12px;
+            COLOR: #333;
+            LINE-HEIGHT: 24px;
+            FONT-FAMILY: Arial, Helvetica, sans-serif
+        }
+        
+        UL {
+            LIST-STYLE-TYPE: none
+        }
+        
+        LI {
+            LIST-STYLE-TYPE: none
+        }
+        
+        OL {
+            LIST-STYLE-TYPE: none
+        }
+        
+        A:link {
+            COLOR: #2864b4;
+            TEXT-DECORATION: none
+        }
+        
+        A:visited {
+            COLOR: #2864b4;
+            TEXT-DECORATION: none
+        }
+        
+        A:hover {
+            COLOR: #ff6600
+        }
+        
+        .high_txt {
+            COLOR: #ff6600
+        }
+        
+        .gray_txt {
+            COLOR: #999
+        }
+        
+        .head {
+            BACKGROUND: url(images/head_bg.jpg) repeat-x left top;
+            HEIGHT: 243px
+        }
+        
+        .content {
+            MARGIN: 10px auto 0px;
+            WIDTH: 980px
+        }
+        
+        .left_cnt {
+            FLOAT: left;
+            WIDTH: 700px
+        }
+        
+        .right_col {
+            FLOAT: right;
+            WIDTH: 260px
+        }
+        
+        .clear {
+            CLEAR: both
+        }
+        
+        .main_tab {
+            BACKGROUND: url(images/tab_main_bg.jpg) no-repeat left top
+        }
+        
+        .main_tab UL {
+            MARGIN-LEFT: 20px;
+            OVERFLOW: hidden;
+            WIDTH: 490px;
+            LIST-STYLE-TYPE: none
+        }
+        
+        .main_tab UL LI {
+            FONT-SIZE: 14px;
+            BACKGROUND: url(images/tab_v_line.jpg) no-repeat left top;
+            FLOAT: left;
+            MARGIN-LEFT: -2px;
+            OVERFLOW: hidden;
+            WIDTH: 120px;
+            CURSOR: pointer;
+            COLOR: #103b40;
+            LINE-HEIGHT: 50px;
+            HEIGHT: 42px;
+            TEXT-ALIGN: center
+        }
+        
+        .main_tab UL LI.now {
+            FONT-WEIGHT: bold;
+            BACKGROUND: url(images/tab_now_bg.gif) no-repeat left top;
+            CURSOR: default;
+            COLOR: #ff6600
+        }
+        
+        .main_ttl {
+            MARGIN-TOP: 10px;
+            MARGIN-BOTTOM: 10px
+        }
+        
+        .intro_tbl {
+            BORDER-BOTTOM: #dddddd 1px solid
+        }
+        
+        .main_intro {
+            FONT-SIZE: 12px;
+            COLOR: #666666;
+            LINE-HEIGHT: 22px
+        }
+        
+        .main_intro P {
+            MARGIN: 5px 0px
+        }
+        
+        .con1_sec2 {
+            PADDING-RIGHT: 25px;
+            PADDING-LEFT: 25px;
+            PADDING-BOTTOM: 15px;
+            PADDING-TOP: 15px;
+            BORDER-BOTTOM: #ddd 1px solid
+        }
+        
+        .con1_sec3 {
+            PADDING-RIGHT: 25px;
+            PADDING-LEFT: 25px;
+            PADDING-BOTTOM: 15px;
+            PADDING-TOP: 15px;
+            BORDER-BOTTOM: #ddd 1px solid
+        }
+        
+        .safety_logo {
+            MARGIN-TOP: 5px
+        }
+        
+        #foot {
+            COLOR: #666;
+            LINE-HEIGHT: 24px;
+            HEIGHT: 150px;
+            TEXT-ALIGN: center
+        }
+        
+        .col_ttl {
+            PADDING-LEFT: 20px;
+            FONT-SIZE: 14px;
+            BACKGROUND: url(images/rgt_ttl_bg.gif) no-repeat left top;
+            LINE-HEIGHT: 29px;
+            HEIGHT: 29px
+        }
+        
+        .col_cnt {
+            BORDER-RIGHT: #dbe1e6 1px solid;
+            PADDING-RIGHT: 10px;
+            BORDER-TOP: #dbe1e6 1px;
+            PADDING-LEFT: 10px;
+            PADDING-BOTTOM: 10px;
+            BORDER-LEFT: #dbe1e6 1px solid;
+            WIDTH: 238px;
+            PADDING-TOP: 10px;
+            BORDER-BOTTOM: #dbe1e6 1px
+        }
+        
+        .col_btm {
+            BACKGROUND: url(images/rgt_col_btm.gif) no-repeat left top;
+            HEIGHT: 5px
+        }
+        
+        .down LI {
+            PADDING-LEFT: 25px;
+            BACKGROUND: url(images/icon_text.gif) no-repeat left 6px
+        }
+        
+        .qa_tbl TR TD {
+            LINE-HEIGHT: 18px
+        }
+        
+        #tab_con3 {}
+        
+        #foot {
+            COLOR: #666;
+            LINE-HEIGHT: 24px;
+            HEIGHT: 150px;
+            TEXT-ALIGN: center
+        }
+        
+        #foot UL.foot_tab {
+            MARGIN: 7px auto;
+            OVERFLOW: hidden;
+            WIDTH: 570px;
+            HEIGHT: 14px
+        }
+        
+        #foot UL.foot_tab LI {
+            PADDING-RIGHT: 10px;
+            DISPLAY: inline-block;
+            PADDING-LEFT: 10px;
+            FLOAT: left;
+            PADDING-BOTTOM: 0px;
+            MARGIN-LEFT: -2px;
+            OVERFLOW: hidden;
+            BORDER-LEFT: #cccccc 1px solid;
+            LINE-HEIGHT: 12px;
+            PADDING-TOP: 1px;
+            HEIGHT: 12px
+        }
+        
+        #foot UL.foot_tab LI A:link {
+            COLOR: #666;
+            TEXT-DECORATION: none
+        }
+        
+        #foot UL.foot_tab LI A:visited {
+            COLOR: #666;
+            TEXT-DECORATION: none
+        }
+        
+        #foot UL.foot_tab LI.high A:link {
+            COLOR: #2864b4
+        }
+        
+        #foot UL.foot_tab LI.high A:visited {
+            COLOR: #2864b4
+        }
+        
+        #foot UL.foot_tab LI.high A:hover {
+            COLOR: #ff6600
+        }
+        
+        #foot UL.foot_tab LI A:hover {
+            COLOR: #ff6600
+        }
+        
+        .safety_logo {
+            MARGIN-TOP: 5px
+        }
+    </style>
+
+    <script>
+        function setTab(name, num, n) {
+            for (i = 1; i <= n; i++) {
+                var menu = document.getElementById(name + i);
+                var con = document.getElementById(name + "_" + "con" + i);
+                menu.className = i == num ? "now" : "";
+                con.style.display = i == num ? "block" : "none";
+            }
+        }
+    </script>
+    <style id="style-1-cropbar-clipper">
+        .en-markup-crop-options {
+            top: 18px !important;
+            left: 50% !important;
+            margin-left: -100px !important;
+            width: 200px !important;
+            border: 2px rgba(255, 255, 255, .38) solid !important;
+            border-radius: 4px !important;
+        }
+        
+        .en-markup-crop-options div div:first-of-type {
+            margin-left: 0px !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="content">
+        <div class="left_cnt">
+            <div class="main_tab">
+                <ul>
+                    <li class="now" id="tab1" onclick="setTab(&#39;tab&#39;,1,4)">系统介绍 </li>
+                    <li id="tab2" onclick="setTab(&#39;tab&#39;,2,4)" class="">申请引导 </li>
+                    <li id="tab3" onclick="setTab(&#39;tab&#39;,3,4)" class="">申请流程 </li>
+                    <li id="tab4" onclick="setTab(&#39;tab&#39;,4,4)" class="">法律说明 </li>
+                </ul>
+                <div id="tab_con1" style="display: block;">
+                    <div class="main_ttl"><img height="131" src="images/main_ttl.jpg" width="700"></div>
+                    <table class="intro_tbl" cellspacing="0" cellpadding="0" width="100%" border="0">
+                        <tbody>
+                            <tr>
+                                <td align="middle" width="162"><img height="156" src="images/main_pic.jpg" width="127"></td>
+                                <td class="main_intro">
+                                    <p>　　“网络游戏未成年人家长监护工程”是一项由网络游戏企业共同发起并参与实施，由中华人民共和国文化部指导，旨在加强家长对未成年人参与网络游戏的监护，引导未成年人健康、绿色参与网络游戏，和谐家庭关系的社会性公益行动。</p>
+                                    <p>　　“家长监护机制”是北京泰和大家在这一公益行动中，针对目前未成年人缺乏自控及自律能力，容易陷入沉迷；少数监护人缺少时间照顾孩子，不能及时监督孩子游戏时间的现状，而推出的一种可由家长实施监控，纠正部分未成年子女沉迷游戏的保护机制。
+                                        <!-- <br><a href="http://cdnpush.feiliu.com/jiazhang/notice.html">未成年人健康参与网络游戏提示</a> -->
+                                        <br>
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="con1_sec2"><strong>供申请监督方式：</strong>
+                        <br>A.&nbsp; &nbsp;屏蔽账号：根据监护人意愿屏蔽相关游戏应用登陆。
+                        <br>B.&nbsp; 账号动态监控：登陆、修改密码等操作将发短信至监护人手机。
+                        <br>&nbsp; &nbsp;&nbsp; 1）账号已经有认证手机的，将监护人手机替换为认证手机；
+                        <br>&nbsp; &nbsp;&nbsp; 2）账号未认证手机，将监护人手机绑定成认证手机；
+                    </div>
+                    <div class="con1_sec3"><strong>其他要求：</strong>
+                        <br>1.申请人应提交较完备的申请材料，对未提供的信息要及时补充；可请熟知电脑、互联网、游戏的人员进行协助，以便提供详实资料；
+                        <br>2.申请人应保证提交的信息真实有效；对于提供虚假信息或伪造证件，我司将保留进一步追究法律责任的权利。
+                    </div>
+                </div>
+                <div id="tab_con2" style="display: none;">
+                    <div class="con1_sec2">
+                        <h2 style="FONT-SIZE: 14px; COLOR: #2864b4">申请条件：</h2>1、 申请人需为被监护未成年人的法定监护人；
+                        <br>2、 申请人的被监护人年龄小于18周岁；
+                        <br>3、 申请人需为大陆公民，不含港、澳、台人士。
+                        <br>
+                    </div>
+                    <div class="con1_sec2">
+                        <h2 style="FONT-SIZE: 14px; COLOR: #2864b4">申请需提交材料：</h2>1、监护人信息表（包含监护人的身份证明复印件）；
+                        <br>2、被监护人信息表（包含被监护人所玩游戏相关信息及身份证明复印件）；
+                        <br>3、填写网络游戏未成年人家长监护申请书、保证书、授权书并手工签字（需下载，填写并打印，签字）；
+                        <br>4、申请人与被监护人的监护关系证明文件（户口簿或有关机关出具的证明文件）。
+                        <br>
+                        <div align="center">
+                            <a href="http://cdnpush.feiliu.com/jiazhang/images/apply.rar"><img height="35" src="images/down_all.gif" width="137" border="0"></a>
+                        </div>
+                    </div>
+                    <div class="con1_sec2">
+                        <h2 style="FONT-SIZE: 14px; COLOR: #2864b4">申请方式：</h2><strong class="high_txt">1.电话服务</strong>
+                        <br>监护人可以通过来专线电话来咨询，7*24小时，全年无休，专线：010-58473846（资深客服解答）。
+                        <br>
+                        <strong class="high_txt">3.接待服务</strong>
+                        <br>监护人可以直接上门进行申请，接待服务受理时间7*8小时（9:30—17:15），全年无休，接待地址：北京东城区香河园路1号院18号楼当代MOMA商务中心4层
+                        <br><strong class="high_txt">4.传真服务</strong>
+                        <br>监护人可以通过传真发送相关信息，进行申请，传真24小时受理，传真号码：010-84288671。
+                        <br>
+                    </div>
+                    <div class="con1_sec3">
+                        <h2 style="FONT-SIZE: 14px; COLOR: #2864b4">其他要求：</h2>1.申请人应提交较完备的申请材料，对未提供的信息要及时补充；可请熟知电脑、互联网、游戏的人员进行协助，以便提供详实资料；
+                        <br>2.申请人应保证提交的信息真实有效；对于提供虚假信息或伪造证件，我司将保留进一步追究法律责任的权利。
+                    </div>
+                </div>
+                <div id="tab_con3" style="display: none;"><img height="470" src="images/liuchengtu.jpg" width="700">
+                    <div class="clear"></div>
+                </div>
+                <div id="tab_con4" style="display: none;">
+                    <p style="line-height: 24px;background: rgb(245, 245, 245)">
+                        <strong><span style="font-size: 16px;font-family:微软雅黑;color:#434040">法律声明</span></strong>
+                    </p>
+                    <p style="margin-left: 48px">
+                        <span style=";font-family: 微软雅黑;color:#666666">北京泰和大家科技有限公司（以下简称&quot;北京泰和大家&quot;）是本网站的所有者和经营者，为访问者提供信息、产品等服务。北京泰和大家会根据实际情况更改本网站所有条款（包括通告、声明），以及本网站所提供信息、产品、服务、价格与程序等内容，请您随时留意该法律声明的变更。若违反本网站声明，北京泰和大家保留使用一切法律途径寻求救济的权利。</span>
+                    </p>
+                    <p style="line-height: 24px;background: rgb(245, 245, 245)">
+                        <strong><span style="font-size: 16px;font-family:微软雅黑;color:#434040">法律管辖</span></strong>
+                    </p>
+                    <p style="margin-left: 48px">
+                        <span style=";font-family: 微软雅黑;color:#666666">与访问或使用本网站有关的事务均适用中华人民共和国的法律。若双方就上述事务产生纠纷，由北京泰和大家所在地法院管辖。</span>
+                    </p>
+                    <p style="line-height: 24px;background: rgb(245, 245, 245)">
+                        <strong><span style="font-size: 16px;font-family:微软雅黑;color:#434040">隐私保护</span></strong>
+                    </p>
+                    <p style="margin-left: 48px">
+                        <span style=";font-family: 微软雅黑;color:#666666">用户在注册时向北京泰和大家提供个人信息的，则视为用户明确授权北京泰和大家搜集、整理、保存及合理使用该等信息。</span>
+                    </p>
+                    <p style="margin-left: 48px">
+                        <span style=";font-family: 微软雅黑;color:#666666">我们注重对用户隐私的保护，北京泰和大家不会将您的个人信息及存储在本网站上非公开信息披露给其他人，但以下情况除外：</span>
+                    </p>
+                    <p style="margin-left: 48px">
+                        <span style=";font-family: 微软雅黑;color:#666666">（1）事先经用户或其监护人授权；</span>
+                    </p>
+                    <p style="margin-left: 48px">
+                        <span style=";font-family: 微软雅黑;color:#666666">（2）根据有关法律、法规的要求；</span>
+                    </p>
+                    <p style="margin-left: 48px">
+                        <span style=";font-family: 微软雅黑;color:#666666">（3）司法机关或行政机关的要求；</span>
+                    </p>
+                    <p style="margin-left: 48px">
+                        <span style=";font-family: 微软雅黑;color:#666666">（4）为维护社会公共利益或北京泰和大家的合法利益；</span>
+                    </p>
+                    <p style="margin-left: 48px">
+                        <span style=";font-family: 微软雅黑;color:#666666">（5）向北京泰和大家的关联公司提供；</span>
+                    </p>
+                    <p style="margin-left: 48px">
+                        <span style=";font-family: 微软雅黑;color:#666666">（6）因合并、股权转让等原因，用户的资料被作为北京泰和大家的业务资产转移的。</span>
+                    </p>
+                    <p style="margin-left: 48px">
+                        <span style=";font-family: 微软雅黑;color:#666666">为了提高我们的服务和管理，在不透露单个用户隐私信息的前提下，北京泰和大家会对整个用户数据库进行分析并对该分析数据进行商业上合理的利用。</span>
+                    </p>
+                    <p style="line-height: 24px;background: rgb(245, 245, 245)">
+                        <strong><span style="font-size: 16px;font-family:微软雅黑;color:#434040">第三方链接</span></strong>
+                    </p>
+                    <p style="margin-left: 48px">
+                        <span style=";font-family: 微软雅黑;color:#666666">如果本网站或本网站的内容/信息提供者提供了与第三方网站的链接，由于北京泰和大家无法控制第三方网站，所以北京泰和大家对第三方网站上的任何内容、数据、观点、建议等信息的真实性、有效性、可靠性不承担责任。本网站包含这样的链接不表示北京泰和大家认可、接收或担保此类网站的任何内容。</span>
+                    </p>
+                    <p style="line-height: 24px;background: rgb(245, 245, 245)">
+                        <strong><span style="font-size: 16px;font-family:微软雅黑;color:#434040">免责条款</span></strong>
+                    </p>
+                    <p style="margin-left: 48px">
+                        <span style=";font-family: 微软雅黑;color:#666666">本网站如因系统维护或升级而需暂停服务时，如因线路及非本公司控制范围外的技术故障或其它不可抗力而导致暂停服务时，于暂停服务期间造成的一切不便与损失，本网站不负任何责任。任何由于黑客攻击、计算机病毒侵入或发作、因政府管制而造成的暂时性关闭等影响网络正常经营的不可抗力而造成的个人资料泄露、丢失、被盗用或被窜改等，本网站均得免责。北京泰和大家对任何由于不当使用本网站而引起的损失，包括但不限于直接的，间接的，偶然的、惩罚性的和引发的损失，不承担责任。</span>
+                    </p>
+                    <p style="line-height: 24px;background: rgb(245, 245, 245)">
+                        <strong><span style="font-size: 16px;font-family:微软雅黑;color:#434040">知识产权</span></strong>
+                    </p>
+                    <p style="margin-left: 48px">
+                        <span style=";font-family:微软雅黑;color:#666666">北京泰和大家及其关联公司对本网站所有信息内容（除特别注明信息来源或由他方输入的信息外）包括但不限于文字表述及其组合、图片、声音、录像、图标、图饰、图表、色彩、版面设计、软件、程序、数据等为用户提供的任何信息均享有完整的著作权、专利权或商标权等相关权利，并受《中华人民共和国著作权法》等相关法律法规和中国加入的所有知识产权方面的国际条约、国际公约等的保护。如果您确认您的作品在本网站被抄袭，请提供身份证明、权属证明及详细侵权情况证明，向本网站做版权投诉：service@dajiagame.com 北京泰和大家保留一切未在此明示授予的权利。</span>
+                    </p>
+                    <p>
+                        <br/>
+                    </p>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <div class="right_col">
+            <h2 class="col_ttl">服务方式</h2>
+            <div class="col_cnt">
+                <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                    <tbody>
+                        <tr>
+                            <td valign="top" width="61%">
+                                <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                                    <tbody>
+                                        <tr>
+                                            <td valign="top" width="11%"><img height="13" src="images/icon_tel.gif" width="19" vspace="3"></td>
+                                            <td valign="top" width="28%">服务专线：</td>
+                                            <td valign="top" width="61%"><b class="high_txt">010-58473846</b><span class="gray_txt"><br>(资深客服解答)</span>
+                                                <br><b class="high_txt">网络视频：网络接待</b></td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top"><img height="13" src="images/icon_fax.gif" width="16" vspace="3"></td>
+                                            <td valign="top">服务传真：</td>
+                                            <td valign="top"><b class="high_txt">010-84288671</b></td>
+                                        </tr>
+                                    </tbody>
+                                </table><span class="gray_txt"></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col_btm"></div>
+            <h2 class="col_ttl">服务申请书下载</h2>
+            <div class="col_cnt">
+                <ul class="down">
+                    <li>附件一：<a href="images/att1.doc">监护人申请书</a>
+                    </li>
+                    <li>附件二：<a href="images/att2.doc">被监护人信息说明书</a>
+                    </li>
+                    <li>附件三：<a href="images/att3.doc">家长监护申请书</a>
+                    </li>
+                </ul>
+                <div style="MARGIN: 5px 0px" align="center">
+                    <a href="images/apply.zip"><img height="33" alt="打包下载" src="images/btn_down.gif" width="106" border="0"></a>
+                </div>
+            </div>
+            <div class="col_btm"></div>
+            <h2 class="col_ttl">家长监护服务FAQ</h2>
+            <div class="col_cnt">
+                <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                    <tbody>
+                        <tr>
+                            <td valign="top" width="61%">
+                                <table class="qa_tbl" cellspacing="0" cellpadding="0" width="100%" border="0">
+                                    <tbody>
+                                        <tr>
+                                            <td valign="top" width="10%">Q：</td>
+                                            <td valign="top" width="90%">可以通过什么渠道申请家长监督未成
+                                                <br>年人账号？</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="gray_txt" valign="top">A：</td>
+                                            <td class="gray_txt" valign="top">目前您可以通过专线电话、网络接待方式来咨询，然后采取传真和上门的方式进行申请。</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="BACKGROUND: url(images/dot_bg.gif) repeat-x left top" valign="top" height="9"></td>
+                                            <td style="BACKGROUND: url(images/dot_bg.gif) repeat-x left top" valign="top"></td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top">Q：</td>
+                                            <td valign="top">申请监督的账号有什么要求？</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="gray_txt" valign="top">A：</td>
+                                            <td class="gray_txt" valign="top">账号所属人必须未满18周岁。</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="BACKGROUND: url(images/dot_bg.gif) repeat-x left top" valign="top" height="9"></td>
+                                            <td style="BACKGROUND: url(images/dot_bg.gif) repeat-x left top" valign="top"></td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top">Q：</td>
+                                            <td valign="top">申请监督未成年人账号需要提供什么</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="gray_txt" valign="top">A：</td>
+                                            <td class="gray_txt" valign="top">您需要提供监护人身份证复印件、账号所属人身份证复印件以及户口本复印件、公安机关监护证明。</td>
+                                        </tr>
+                                        <tr>
+                                            <td align="right" colspan="2"><a href="faq.html">更多FAQ</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table><span class="gray_txt"></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col_btm"></div>
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+    <div id="foot">
+        <ul class="foot_tab">
+            <div class="clear"></div>
+        </ul>
+        <div style="CLEAR: both"></div>
+        <p>版权所有©北京泰和大家科技有限公司【2015】0042-042号</p>
+        <p> 联系电话：+8610 84288671京网文 2014-2034 京ICP备14061937号-1
+        </p>
+    </div>
+    <script>
+        (function() {
+            window.clean__ = 'true';
+        })();
+    </script>
+</body>
+
+</html>

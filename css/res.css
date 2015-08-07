@@ -39,7 +39,7 @@
         height: 103px;
     }
     #logo {
-        width: 160px;
+        width: 110px;
         height: 95px;
     }
     .nav_co {
@@ -62,7 +62,33 @@
     li.liCtrl {
         width: 62px;
     }
+    
+    #User,#User-logined{
+        float: right;
+        margin: 30px 0;
+        font-size: 14px;
+    }
+    #User .login {
+        float: left;
+        padding: 4px;
+        height: 35px;
+        line-height: 28px;
+        background: url(../image/login.png) no-repeat;
+        background-position: center left;
+        padding-left: 25px;
+    }
+    #User .reg {
+        float: left;
+        padding: 4px;
+        height: 35px;
+        line-height: 28px;
+        background: url(../image/reg.png) no-repeat;
+        background-position: center left;
+        padding-left: 25px;
+    }
 }
+
+
 /* 中等屏幕（桌面显示器，大于等于 992px） md-min */
 
 @media (min-width: 992px) {
@@ -100,8 +126,8 @@
         height: 138px;
     }
     #logo {
-        width: 220px;
-        height: 130px;
+        width: 160px;
+        height: 125px;
     }
     .nav_co {
         margin: 48px 0;
@@ -122,7 +148,32 @@
     li.liCtrl {
         width: 76px;
     }
+    #User,#User-logined{
+        float: right;
+        margin: 48px 0;
+        font-size: 18px;
+    }
+    #User .login {
+        float: left;
+        padding: 4px;
+        height: 35px;
+        line-height: 28px;
+        background: url(../image/login.png) no-repeat;
+        background-position: center left;
+        padding-left: 30px;
+    }
+    #User .reg {
+        float: left;
+        padding: 4px;
+        height: 35px;
+        line-height: 28px;
+        background: url(../image/reg.png) no-repeat;
+        background-position: center left;
+        padding-left: 30px;
+    }
 }
+
+
 /* 大屏幕（大桌面显示器，大于等于 1200px） lg-min */
 
 @media (min-width: 1200px) {
@@ -177,5 +228,28 @@
     }
     li.liCtrl {
         width: 76px;
+    }
+    #User,#User-logined{
+        float: right;
+        margin: 48px 0;
+        font-size: 18px;
+    }
+    #User .login {
+        float: left;
+        padding: 4px;
+        height: 35px;
+        line-height: 28px;
+        background: url(../image/login.png) no-repeat;
+        background-position: center left;
+        padding-left: 30px;
+    }
+    #User .reg {
+        float: left;
+        padding: 4px;
+        height: 35px;
+        line-height: 28px;
+        background: url(../image/reg.png) no-repeat;
+        background-position: center left;
+        padding-left: 30px;
     }
 }

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <title>大家游戏</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+    #User,
+    #User-logined {
+        float: right;
+        font-size: 14px;
+    }
+    
+    #User .login {
+        float: left;
+        padding: 4px;
+        height: 35px;
+        line-height: 28px;
+        background: url(image/login.png) no-repeat;
+        background-position: center left;
+        background-size: 20px;
+        padding-left: 26px;
+        margin-right: 13px;
+    }
+    
+    #User .reg {
+        float: left;
+        padding: 4px;
+        height: 35px;
+        line-height: 28px;
+        background: url(image/reg.png) no-repeat;
+        background-position: center left;
+        padding-left: 24px;
+        background-size: 20px;
+    }
+    
+    #User a,
+    #User-logined a {
+        color: #777;
+    }
+    
+    #User-logined .dropdown {
+        height: 35px;
+        line-height: 35px;
+    }
+    .dropdown-menu{
+        top: 70%;
+  padding: 0;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="User" >
+        <div class="login"><a href="login.html">登录</a></div>
+        <div class="reg"><a href="reg.html">注册</a></div>
+    </div>
+    <div id="User-logined" class="hidden">
+        <div class="dropdown" style=" float: left; ">
+            <a id="userName" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">123456@qq.com
+                        <span class="caret"></span>
+                        </a>
+            <ul class="dropdown-menu" aria-labelledby="userName">
+                <li><a href="#">修改密码</a></li>
+            </ul>
+        </div>
+        <a href="#" style=" float: left; height: 35px; line-height: 35px; margin-left: 10px; ">退出登录</a>
+    </div>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
